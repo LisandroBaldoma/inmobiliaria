@@ -1,0 +1,57 @@
+:root{
+    --primary-color:#637384;
+/*HEADER-NAVBAR*/    
+}
+.nav-bar-container{
+    background-color: var(--primary-color);
+}
+.img-logo{
+    height: 74px;
+    width: 74px;
+}
+.img-fondo-principal{
+    height: auto;
+}
+.nombre-inmobiliaria{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.container-logo{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+/*SECCION BUSCADOR PROPIEDADES*/  
+.container-buscadors{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn-buscador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*SECCION-CASAS*/
+.imagen-card{
+    height:250px;
+    
+}
+/* SECCION DESCRIPCION-CASAS*/
+.container-carrusel{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: var(--primary-color);
+}
+
