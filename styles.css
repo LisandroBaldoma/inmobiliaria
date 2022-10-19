@@ -1,57 +1,82 @@
-:root{
-    --primary-color:#637384;
-/*HEADER-NAVBAR*/    
+:root {
+  --primary-color: #637384;
+  /*HEADER-NAVBAR*/
 }
-.nav-bar-container{
-    background-color: var(--primary-color);
+.nav-bar-container {
+  background-color: var(--primary-color);
 }
-.img-logo{
-    height: 74px;
-    width: 74px;
+.img-logo {
+  height: 70px;
+  width: 290px;
 }
-.img-fondo-principal{
-    height: auto;
+.img-fondo-principal {
+  height: auto;
 }
-.nombre-inmobiliaria{
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+.nombre-inmobiliaria {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
-.container-logo{
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+.container-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-/*SECCION BUSCADOR PROPIEDADES*/  
-.container-buscadors{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
+/*SECCION BUSCADOR PROPIEDADES*/
+.container-buscadors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.btn-buscador{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn-buscador {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 /*SECCION-CASAS*/
-.imagen-card{
-    height:250px;
-    
+.imagen-card {
+  height: 250px;
 }
 /* SECCION DESCRIPCION-CASAS*/
-.container-carrusel{
-    display: flex;
-    gap: 30px;
-    padding: 20px;
+.container-carrusel {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+}
+/* SECCION TASACIONES*/
+
+
+/* SECCION FOOTER*/
+footer {
+  background-color: var(--primary-color);
+}
+.container-logo p {
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
-
-
-
-
-
-
-footer{
-    background-color: var(--primary-color);
+.col-contactos p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
 }
-
+.container-redes-sociales {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-redes-sociales ul {
+  list-style: none;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid orange;
+}
