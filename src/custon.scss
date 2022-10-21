@@ -1,0 +1,97 @@
+// defniciones de variables
+
+$primary: #637384;
+$secondary: #ff914d;
+$navbar-light-color: white;
+$navbar-light-hover-color: $secondary;
+$btn-font-size: 1.3rem;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// componentes custom
+//------------------------------NAVBAR-------------------------------------------//
+.bg-navbar-custom {
+  background-color: $primary;
+}
+.bg-navbar-custom li a {
+  font-size: 1.3rem;
+}
+.img-logo {
+  width: 90%;
+}
+.navbar-item-custom li a {
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar-item-custom li a:hover {
+  color: $secondary;
+  background-color: $primary;
+}
+//----------------------SECTION-BUSCDOR-PROPIEDADES-------------------------------//
+.container-buscadors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+//----------------------SECTION-CASAS-------------------------------//
+
+.imagen-card {
+  height: 250px;
+}
+//----------------------SECTION-DESCRIPCION-CASAS-------------------------------//
+.container-carrusel {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+  }
+
+//----------------------SECTION-FOOTER-------------------------------//
+  footer {
+    background-color: $primary;
+  }
+  .container-logo p {
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  .col-contactos p {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+  }
+  .container-redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .container-redes-sociales ul {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid orange;
+  }
+
+//------------------agregar mapa de colores al root principal-----------------//
+$custom-colors: (
+  "inm-principal": #637384,
+  "inm-secondary": #ff914d,
+);
+
+$theme-colors: map-merge(
+  $map1: $theme-colors,
+  $map2: $custom-colors,
+);
+//------------------agregar mapa de colores al root principal-----------------//
+
+@import "../node_modules/bootstrap/scss/bootstrap";
