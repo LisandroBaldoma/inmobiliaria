@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inmobiliaria</title>
+
+    <!--FONT - ICON-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e7cd6a993.js"
+      crossorigin="anonymous"
+    >
+    </script>
+    <!--CSS BOOTSTRAP-CUSTON-->
+    <link rel="stylesheet" href="css/boostrap-custon.css" />
+  
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-navbar-custom">
+        <div class="container flex-row justify-content-around">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-logo"
+              src="../img/logo/Molinari_-_Gainza-removebg-preview.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Alquileres
+                </a>
+                <ul
+                  class="dropdown-menu bg-primary navbar-item-custom"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Departamentos</a></li>
+                  <li><a class="dropdown-item" href="#">Casas</a></li>
+                  <li><a class="dropdown-item" href="#">Cocheras</a></li>
+                  <li><a class="dropdown-item" href="#">Locales</a></li>
+                  <li><a class="dropdown-item" href="#">Oficinas</a></li>
+                  <li><a class="dropdown-item" href="#">Galpones</a></li>
+                  <li><a class="dropdown-item" href="#">Campos</a></li>
+                  <li><a class="dropdown-item" href="#">Terrenos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Ventas
+                </a>
+                <ul
+                  class="dropdown-menu bg-primary navbar-item-custom"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Departamentos</a></li>
+                  <li><a class="dropdown-item" href="#">Casas</a></li>
+                  <li><a class="dropdown-item" href="#">Cocheras</a></li>
+                  <li><a class="dropdown-item" href="#">Locales</a></li>
+                  <li><a class="dropdown-item" href="#">Oficinas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Zonas
+                </a>
+                <ul
+                  class="dropdown-menu bg-primary navbar-item-custom"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Rosario</a></li>
+                  <li><a class="dropdown-item" href="#">Funes</a></li>
+                  <li><a class="dropdown-item" href="#">Roldan</a></li>
+                  <li><a class="dropdown-item" href="#">Pueblo Esther</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tasaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="foto-pincipal">
+        <div class="container-expand-lg">
+          <img
+            src="../img/fondo-principal.jpg"
+            class="img-fluid img-fondo-principal"
+            alt="Imagen de fondo presentacion"
+          />
+        </div>
+      </section>
+      <section class="buscador-propiedades pt-3">
+        <h2 class="titulo-seccion text-center fs-3">Buscar propiedad</h2>
+        <div class="container container-buscadors">
+          <form class="d-flex mt-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Ingrese Codigo propiedad"
+              aria-label="Search"
+            />
+            <button class="btn btn-inm-principal" type="submit">Buscar</button>
+          </form>
+          <div class="dropdown d-grid gap-2">
+            <button
+              class="btn btn-inm-principal dropdown-toggle d-flex align-items-center justify-content-between"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Operacion
+            </button>
+            <ul class="dropdown-menu bg-primary navbar-item-custom">
+              <li><a class="dropdown-item" href="#">Compra</a></li>
+              <li><a class="dropdown-item" href="#">Venta</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Alquiler</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown d-grid gap-2">
+            <button
+              class="btn btn-inm-principal dropdown-toggle d-flex align-items-center justify-content-between"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Tipologia
+            </button>
+            <ul class="dropdown-menu bg-primary navbar-item-custom">
+              <li><a class="dropdown-item" href="#">Departamentos</a></li>
+              <li><a class="dropdown-item" href="#">Casass</a></li>
+              <li><a class="dropdown-item" href="#">Oficinas</a></li>
+              <li><a class="dropdown-item" href="#">Locales</a></li>
+            </ul>
+          </div>
+          <div class="dropdown d-grid gap-2">
+            <button
+              class="btn btn-inm-principal dropdown-toggle d-flex align-items-center justify-content-between"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dormitorios
+            </button>
+            <ul class="dropdown-menu bg-primary navbar-item-custom">
+              <li><a class="dropdown-item" href="#">1 Dormitorio</a></li>
+              <li><a class="dropdown-item" href="#">2 Dormitorio</a></li>
+              <li>
+                <a class="dropdown-item" href="#">3 Dormitorio</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">4 Dormitorio</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-inm-secondary" type="button">Buscar</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-casas pt-3">
+        <h2 class="text-center fs-3">Casas en venta</h2>
+        <div class="container container-casas-venta">
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="imagen-card"
+                  src="../img/casa-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    CASA 4 DORMITORIOS A ESTRENAR EN VENTA FISHERTON COUNTRY LOS
+                    PASOS 1 BARRIO PRIVADO PILETA
+                  </h5>
+                  <h4 class="card-title">VENTA | CASA</h4>
+                  <p class="card-text">Country Los Pasos 1</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">U$S 750.000</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="imagen-card"
+                  src="../img/casa-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    CASA DE 3 DORMITORIOS EN VENTA CON COCHERA ECHESORTU ROSARIO
+                  </h5>
+                  <h4 class="card-title">VENTA | CASA</h4>
+                  <p class="card-text">Perito Moreno 1495</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">U$S 550.000</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img
+                  class="imagen-card"
+                  src="../img/casa-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    CASA 5 DORMITORIOS VENTA PILETA ROLDÁN LOS RAIGALES BARRIO
+                    CERRADO
+                  </h5>
+                  <h4 class="card-title">VENTA | CASA</h4>
+                  <p class="card-text">Chacra Los Raigales - Roldán</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">U$S 650.000</small>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="section-descripcion-casa pt-3">
+        <h2 class="text-center fs-3">Descripcion Casa</h2>
+        <div class="container d-flex flex-column">
+          <div class="cabecera-descripcion-casa">
+            <h3>
+              CASA EN PLANTA ALTA DE 3 DORMITORIOS EN VENTA A ESTRENAR CENTRO
+              ROSARIO
+            </h3>
+            <p>VENTA | CASA</p>
+            <p>Dorrego 1234</p>
+            <p>43273232</p>
+          </div>
+          <div class="galeria-descripcion-casa">
+            <img class="w-100" src="../img/casas/casa-1-principal.jpg" alt="" />
+
+            <div class="container container-carrusel">
+              <div class="col">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="../img/casas/amibiente1-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../img/casas/amibiente2-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../img/casas/amibiente3-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="../img/casas/amibiente4-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+<<<<<<< HEAD:index.html
+                <div
+                  id="carouselExampleDark"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img
+                        src="./img/casas/amibiente1-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>
+                          Some representative placeholder content for the first
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="./img/casas/amibiente2-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>
+                          Some representative placeholder content for the second
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./img/casas/amibiente3-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./img/casas/amibiente4-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./img/casas/amibiente5-casa1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>
+                          Some representative placeholder content for the third
+                          slide.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+=======
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../img/casas/amibiente1-casa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/casas/amibiente2-casa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/casas/amibiente3-casa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+>>>>>>> version-sass:public/index.html
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+          <div class="descripcion-principal-casa">
+            <h3>CARACTERÍSTICAS GENERALES</h3>
+            <p>
+              Chacras Los Raigales - Roldan. Barrio cerrado. Sobre ruta AO12 a 2
+              Km de la AU Rosario - Córdoba. Emplazado en 40 hectáreas, 77 lotes
+              y una infraestructura de canchas de futbol, tenis y equitación.
+              Propiedad moderna, desarrollada en dos plantas, sobre un lote de
+              5.000 m2 con excelente forestación. Cuenta con piscina de 22 x 5
+              aprox. climatizada y jacuzzi. Planta baja: ingresamos a un amplio
+              living comedor, luminoso, con grandes ventanales con vistas al
+              jardín y piscina, techo doble altura, anafe, dos hornos, a gas y
+              eléctrico, barra desayunadora, un dormitorio con baño en suite con
+              vista al parque. Baño completo. Galería con parrillero y cochera
+              semi cubierta para tres autos. Planta alta: consta de 3
+              dormitorios en suite, estar o escritorio muy amplio. Escritorio.
+              Lavadero independiente con terraza. Calefacción central (frio /
+              calor) Alarma. Aceptan propiedad en parte de pago. POSIBILIDAD DE
+              VENTA SOBRE OTRO LOTE DE 5.000 M2 .............. U$S 650.000.-
+            </p>
+          </div>
+          <div class="descripcion-detalle-casa">
+            <div class="h4 pb-2 mb-4 text-secondary border-bottom border-secondary">
+              Detalles
+            </div>
+            <ul>
+              <li>Sup. semicubierta: 155.00 m2</li>
+              <li>Sup. cubierta: 377.00 m2</li>
+              <li>Toilettes: 1</li>
+              <li>Disposición: Frente</li>
+            </ul>
+            <div class="h4 pb-2 mb-4 text-secondary border-bottom border-secondary">
+              Servicios
+            </div>
+            <ul>
+              <li>Agua Corriente</li>
+              <li>Cloaca</li>
+              <li>Gas Natural</li>
+              <li>Internet</li>
+              <li>Electricidad</li>
+            </ul>
+            <div class="h4 pb-2 mb-4 text-secondary border-bottom border-secondary">
+              Ambientes
+            </div>
+            <ul>
+              <li>Baño de servicio</li>
+              <li>Living comedor</li>
+              <li>Baulera</li>
+              <li>Hall</li>
+              <li>Jardín</li>
+              <li>Lavadero</li>
+            </ul>
+            <div class="h4 pb-2 mb-4 text-secondary border-bottom border-secondary">
+              Amenities/Adicionales
+            </div>
+            <ul>
+              <li>Pileta</li>
+              <li>Parrilla</li>
+              <li>Calefacción central</li>
+              <li>Calefacción central</li>
+            </ul>
+            <div class="h4 pb-2 mb-4 text-secondary border-bottom border-secondary">
+              Ubicacion
+            </div>
+            <!--CONTENIDO GOOGLE MAPS UBICACION CASA-->
+          </div>
+        </div>
+      </section>
+<<<<<<< HEAD:index.html
+      <section class="Tasaciones">
+        <div class="container container-tasaciones">
+          <div class="tasaciones-cabecera">
+            <h2>TASACIONES</h2>
+=======
+      <section class="Tasaciones pt-3">
+        <div class="container container-tasaciones">
+          <div class="tasaciones-cabecera">
+            <h2 class="text-center fs-3">Tasaciones</h2>
+>>>>>>> version-sass:public/index.html
+            <p>
+              Complete el presente formulario y en breve personal capacitado, se
+              comunicará con usted para asesorarlo acerca del valor de su
+              propiedad.
+            </p>
+          </div>
+          <form action="">
+            <div class="row g-3 tasaciones-form-row">
+              <div class="col-12 col-sm-5 tasaciones-form-col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  aria-label="First name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellido"
+                  aria-label="First name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Mail"
+                  aria-label="First name"
+                  required
+                />
+              </div>
+              <div class="col-12 col-sm-5 tasaciones-form-col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telefono"
+                  aria-label="First name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Ciudad"
+                  aria-label="First name"
+                />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pais"
+                  aria-label="First name"
+                />
+              </div>
+<<<<<<< HEAD:index.html
+              <div class="col-12 tasaciones-form-col">
+                <input
+                  type="text"
+                  class="form-control imput-comentrios"
+                  placeholder="First name"
+=======
+              <div class="col-12 col-sm-10 tasaciones-form-col">
+                <input
+                  type="text"
+                  class="form-control imput-comentrios"
+                  placeholder="Caracteiristicas propiedad"
+>>>>>>> version-sass:public/index.html
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-12 tasaciones-btn">
+<<<<<<< HEAD:index.html
+                <button class="btn btn-primary" type="submit">
+                  Submit form
+=======
+                <button class="btn btn-secondary" type="submit">
+                  Enviar formulario
+>>>>>>> version-sass:public/index.html
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="About"></section>
+
+      <footer>
+        <div class="container">
+          <div class="row d-flex flex-column">
+            <div class="col container container-logo">
+              <img
+                class="img-logo"
+<<<<<<< HEAD:index.html
+                src="./img/logo/Molinari_-_Gainza-removebg-preview.png"
+=======
+                src="../img/logo/Molinari_-_Gainza-removebg-preview.png"
+>>>>>>> version-sass:public/index.html
+                alt=""
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                non neque officiis laborum rerum voluptatibus?
+              </p>
+            </div>
+            <div class="col col-contactos">
+              <p>Contactos</p>
+
+              <div class="container container-redes-contacto">
+                <ul class="fa-ul">
+                  <li>
+                    <span class="fa-li"
+                      ><i class="fa-solid fa-map-pin"></i></span
+                    >Monumento a la Bandera 456
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fa-solid fa-phone"></i></span
+                    >0341-4111044
+                  </li>
+                  <li>
+<<<<<<< HEAD:index.html
+                    <span class="fa-li"><i class="fa-light fa-mobile"></i></span
+=======
+                    <span class="fa-li"><i class="fa-solid fa-mobile"></i></span
+>>>>>>> version-sass:public/index.html
+                    >+54 341 6 890765
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-redes-sociales">
+              <ul>
+                <i class="fa-brands fa-facebook-f fa-2x"></i>
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+                <i class="fa-brands fa-envelope fa-2x"></i>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
